@@ -1,11 +1,16 @@
+import React from 'react';
 import './style-card.css';
 import Button from '../Button/Button';
 import setinha from '../../assets/images/setinha.png';
 
-export default function Card({type, text}) {
+export default function Card() {
+    const [type, setType] = React.useState("oculto");
+    const [text, setText] = React.useState("Pergunta");
+
+
     if (type === "oculto") {
         return (
-            <div className="oculto">
+            <div className="oculto" onClick={setType("pergunta")}>
                 <h4>{text}</h4>
                 <ion-icon name="play-outline"></ion-icon>
             </div>

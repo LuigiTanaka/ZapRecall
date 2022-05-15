@@ -1,0 +1,50 @@
+.oculto, .respondido {
+    width: 80%;
+    height: 65px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    margin: 0 auto 25px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.oculto h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.oculto ion-icon {
+    font-size: 30px;
+    color: #333333;
+}
+
+.respondido h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.respondido ion-icon {
+    font-size: 30px;
+}
+
+.risco {
+    text-decoration: line-through;
+}
+
+.errou {
+    color: #FF3030;
+}
+
+.quase {
+    color: #FF922E;
+}
+
+.acertou {
+    color: #2FBE34;
+}
