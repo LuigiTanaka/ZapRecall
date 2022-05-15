@@ -1,0 +1,21 @@
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0;
+}
+
+.topo img {
+    width: 52px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.topo h2 {
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}

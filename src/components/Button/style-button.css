@@ -1,0 +1,30 @@
+.button {
+    width: 86px;
+    height: 38px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.button p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.vermelho {
+    background-color: #FF3030;
+}
+
+.amarelo {
+    background-color: #FF922E;
+    ;
+}
+
+.verde {
+    background-color: #2FBE34;
+}
