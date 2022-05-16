@@ -22,6 +22,7 @@
 
 .icones {
     font-size: 26px;
+    display: flex;
 }
 
 .mensagem-final {

@@ -4,22 +4,28 @@ import './style-container.css';
 import Flashcards from '../Flashcards/Flashcards'
 import BarraInferior from '../BarraInferior/BarraInferior';
 
-function embaralhador() { 
-	return Math.random() - 0.5; 
+function embaralhador() {
+    return Math.random() - 0.5;
 }
 
 function criaIcones(icone, index) {
     if (icone === "close-circle") {
         return (
-            <ion-icon key={index} name={icone} className="errou"></ion-icon>
+            <div className="errou">
+                <ion-icon key={index} name={icone}></ion-icon>
+            </div>
         )
     } else if (icone === "help-circle") {
         return (
-            <ion-icon key={index} name={icone} className="quase"></ion-icon>
+            <div className="quase">
+                <ion-icon key={index} name={icone}></ion-icon>
+            </div>
         )
     } else {
         return (
-            <ion-icon key={index} name={icone} className="acertou"></ion-icon>
+            <div className="acertou">
+                <ion-icon key={index} name={icone}></ion-icon>
+            </div>
         )
     }
 }
@@ -42,7 +48,7 @@ export default function Container() {
     const [deck, setDeck] = React.useState(cards);
     const [numRespostas, setNumRespostas] = React.useState(0);
     const [icones, setIcones] = React.useState([]);
-    const [mensagemFinal, setMensagemFinal] = React.useState({classe: "escondido"});
+    const [mensagemFinal, setMensagemFinal] = React.useState({ classe: "escondido" });
 
     return (
         <>
