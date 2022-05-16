@@ -6,3 +6,23 @@ body {
     background-color: #F0696A;
     font-family: 'Recursive', sans-serif;
 }
+
+.errou {
+    color: #FF3030;
+}
+
+.quase {
+    color: #FF922E;
+}
+
+.acertou {
+    color: #2FBE34;
+}
+
+.escondido {
+    display: none;
+}
+
+.visivel {
+    display: initial;
+}

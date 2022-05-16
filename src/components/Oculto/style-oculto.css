@@ -30,21 +30,9 @@
 }
 
 .respondido ion-icon {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .risco {
     text-decoration: line-through;
-}
-
-.errou {
-    color: #FF3030;
-}
-
-.quase {
-    color: #FF922E;
-}
-
-.acertou {
-    color: #2FBE34;
 }

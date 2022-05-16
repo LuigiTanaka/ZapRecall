@@ -19,3 +19,40 @@
     letter-spacing: -0.012em;
     color: #FFFFFF;
 }
+
+.icones {
+    font-size: 26px;
+}
+
+.mensagem-final {
+    width: 60%;
+    margin: 15px 0;
+}
+
+.mensagem-final>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mensagem-final h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.mensagem-final img {
+    width: 23px;
+    height: 23px;
+    margin-right: 14px;
+}
+
+.mensagem-final p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+}
