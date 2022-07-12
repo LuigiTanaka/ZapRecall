@@ -6,9 +6,9 @@ export default function Init({ setScreen }) {
     return (
         <div className='home-page'>  
             <img src={logo} alt='logo'/>
-            <h1>ZapRecall</h1>
+            <h1>Flashcards Game</h1>
             <Link to={'/container'}>
-                <button>Iniciar Recall!</button>
+                <button>Iniciar</button>
             </Link>
         </div>
     )

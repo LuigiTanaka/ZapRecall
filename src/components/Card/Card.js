@@ -18,18 +18,18 @@ export default function Card() {
     } else if (type === "pergunta") {
         return (
             <div className="pergunta">
-                <p>{text}</p>
+                <img src={text} alt="pergunta" />
                 <img src={setinha} alt='setinha' />
             </div>
         )
     } else {
         return (
             <div className="resposta">
-                <p>{text}</p>
+                <img src={text} alt="pergunta" />
                 <div>
                     <Button color='vermelho' text='Não lembrei' />
                     <Button color='amarelo' text='Quase não lembrei' />
-                    <Button color='verde' text='Zap!' />
+                    <Button color='verde' text='Lembrei na hora!' />
                 </div>
             </div>
         )

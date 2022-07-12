@@ -5,7 +5,6 @@ import Pergunta from '../Pergunta/Pergunta';
 import Resposta from '../Resposta/Resposta';
 
 export default function Flashcards({deck, setDeck, numRespostas, setNumRespostas, mensagemFinal, setMensagemFinal, icones, setIcones}) {  
-
     function CriarDeck(card, index) {
         if (card.type === "oculto") {
             return (

@@ -1,5 +1,6 @@
 .resposta{
     width: 80%;
+    max-width: 550px;
     min-height: 131px;
     height: fit-content;
     border-radius: 5px;
@@ -13,15 +14,21 @@
     justify-content: space-between;
 }
 
-.resposta > p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #333333;
-    margin-bottom: 10px;
+.imagem-resposta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.resposta > div {
+.imagem-resposta img {
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto 30px auto;
+}
+
+.botoes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }

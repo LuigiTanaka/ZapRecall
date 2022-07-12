@@ -65,11 +65,13 @@ export default function Resposta({index, text, deck, setDeck, numRespostas, setN
 
     return (
         <div className="resposta">
-            <p>{text}</p>
-            <div>
+            <div className='imagem-resposta'>
+                <img src={text} alt="resposta" />
+            </div>
+            <div className='botoes'>
                 <Button color='vermelho' text='Não lembrei' onClick={() => respondeVermelho(index, deck, setDeck, numRespostas, setNumRespostas, setMensagemFinal, icones, setIcones)} />
                 <Button color='amarelo' text='Quase não lembrei' onClick={() => respondeAmarelo(index, deck, setDeck, numRespostas, setNumRespostas, setMensagemFinal, icones, setIcones)} />
-                <Button color='verde' text='Zap!' onClick={() => respondeVerde(index, deck, setDeck, numRespostas, setNumRespostas, setMensagemFinal, icones, setIcones)} />
+                <Button color='verde' text='Lembrei na hora!' onClick={() => respondeVerde(index, deck, setDeck, numRespostas, setNumRespostas, setMensagemFinal, icones, setIcones)} />
             </div>
         </div>
     )

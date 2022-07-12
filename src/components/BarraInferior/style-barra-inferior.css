@@ -1,16 +1,18 @@
 .barra-inferior {
     width: 100%;
+    max-width: 800px;
     min-height: 70px;
     height: fit-content;
     position: fixed;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: #e1ebf4;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 5px 0;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
 }
 
 .barra-inferior h3 {
@@ -18,4 +20,10 @@
     font-size: 18px;
     line-height: 22px;
     color: #333333;
+}
+
+@media(min-width: 800px) {
+    .barra-inferior {
+        left: calc(50% - 400px);
+    }
 }

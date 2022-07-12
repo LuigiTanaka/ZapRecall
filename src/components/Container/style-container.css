@@ -14,10 +14,11 @@
 .topo h2 {
     font-family: 'Righteous';
     font-weight: 400;
-    font-size: 36px;
+    font-size: 46px;
     line-height: 45px;
     letter-spacing: -0.012em;
     color: #FFFFFF;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
 }
 
 .icones {
@@ -57,3 +58,4 @@
     text-align: center;
     color: #333333;
 }
+

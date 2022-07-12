@@ -1,5 +1,6 @@
 .pergunta {
     width: 80%;
+    max-width: 550px;
     min-height: 131px;
     height: fit-content;
     border-radius: 5px;
@@ -11,14 +12,21 @@
     word-wrap: break-word;
 }
 
-.pergunta p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #333333;
+.imagem-pergunta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pergunta img {
+.imagem-pergunta img {
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto 30px auto;
+}
+
+.pergunta > img {
     width: 30px;
     height: 20px;
     position: absolute;

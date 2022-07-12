@@ -10,7 +10,9 @@ function abreResposta (index, deck, setDeck) {
 export default function Pergunta({index, text, deck, setDeck}) {
     return (
         <div className="pergunta">
-            <p>{text}</p>
+            <div className='imagem-pergunta'>
+                <img src={text} alt="pergunta" />
+            </div>
             <img src={setinha} alt='setinha' onClick={() => abreResposta(index, deck, setDeck)} />
         </div>
     )

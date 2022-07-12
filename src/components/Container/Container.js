@@ -3,6 +3,24 @@ import logoPequeno from '../../assets/images/logo-pequeno.png';
 import './style-container.css';
 import Flashcards from '../Flashcards/Flashcards'
 import BarraInferior from '../BarraInferior/BarraInferior';
+import red from "../../assets/images/red.jpeg"
+import red2 from "../../assets/images/red2.jpeg"
+import bege from "../../assets/images/bege.jpeg"
+import bege2 from "../../assets/images/bege2.jpeg"
+import blue from "../../assets/images/blue.jpeg"
+import blue2 from "../../assets/images/blue2.jpeg"
+import ciano from "../../assets/images/ciano.jpeg"
+import ciano2 from "../../assets/images/ciano2.jpeg"
+import green from "../../assets/images/green.jpeg"
+import green2 from "../../assets/images/green2.jpeg"
+import lightGreen from "../../assets/images/lightGreen.jpeg"
+import lightGreen2 from "../../assets/images/lightGreen2.jpeg"
+import grey from "../../assets/images/grey.jpeg"
+import grey2 from "../../assets/images/grey2.jpeg"
+import anotherGrey from "../../assets/images/anotherGrey.jpeg"
+import anotherGrey2 from "../../assets/images/anotherGrey2.jpeg"
+import yellow from "../../assets/images/yellow.jpeg"
+import yellow2 from "../../assets/images/yellow2.jpeg"
 
 function embaralhador() {
     return Math.random() - 0.5;
@@ -33,14 +51,15 @@ function criaIcones(icone, index) {
 export default function Container() {
 
     const cards = [
-        { type: "oculto", pergunta: "O que é JSX?", resposta: "Uma extensão de linguagem do JavaScript", status: "" },
-        { type: "oculto", pergunta: "O React é __", resposta: "uma biblioteca JavaScript para construção de interfaces", status: "" },
-        { type: "oculto", pergunta: "Componentes devem iniciar com __", resposta: "letra maiúscula", status: "" },
-        { type: "oculto", pergunta: "Podemos colocar __ dentro do JSX", resposta: "expressões", status: "" },
-        { type: "oculto", pergunta: "O ReactDOM nos ajuda __", resposta: "interagindo com a DOM para colocar componentes React na mesma", status: "" },
-        { type: "oculto", pergunta: "Usamos o npm para __", resposta: "gerenciar os pacotes necessários e suas dependências", status: "" },
-        { type: "oculto", pergunta: "Usamos props para __", resposta: "passar diferentes informações para componentes ", status: "" },
-        { type: "oculto", pergunta: "Usamos estado (state) para __", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente", status: "" }
+        { type: "oculto", pergunta: red, resposta: red2, status: "" },
+        { type: "oculto", pergunta: green, resposta: green2, status: "" },
+        { type: "oculto", pergunta: yellow, resposta: yellow2, status: "" },
+        { type: "oculto", pergunta: lightGreen, resposta: lightGreen2, status: "" },
+        { type: "oculto", pergunta: grey, resposta: grey2, status: "" },
+        { type: "oculto", pergunta: anotherGrey, resposta: anotherGrey2, status: "" },
+        { type: "oculto", pergunta: blue, resposta: blue2, status: "" },
+        { type: "oculto", pergunta: bege, resposta: bege2, status: "" },
+        { type: "oculto", pergunta: ciano, resposta: ciano2, status: "" }
     ]
 
     cards.sort(embaralhador);
@@ -54,7 +73,7 @@ export default function Container() {
         <>
             <div className='topo'>
                 <img src={logoPequeno} alt='logo pequeno' />
-                <h2>ZapRecall</h2>
+                <h2>Flashcards</h2>
             </div>
 
             <Flashcards deck={deck} setDeck={setDeck} numRespostas={numRespostas} setNumRespostas={setNumRespostas} mensagemFinal={mensagemFinal} setMensagemFinal={setMensagemFinal} icones={icones} setIcones={setIcones} />
